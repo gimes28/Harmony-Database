@@ -48,7 +48,7 @@ app.post("/newuser", async (req, res) => {
 const PORT = process.env.PORT || 8080;
 const start = async () => {
     try {
-      await mongoose.connect("mongodb+srv://admin-ayush:admin-ayush@cluster0.ptxlfeb.mongodb.net/Harmony?retryWrites=true&w=majority", {useNewUrlParser: true});
+      await mongoose.connect("INSERT CONNECTION STRING", {useNewUrlParser: true});
       app.listen(PORT, () => console.log(`Server is running on port ${PORT}. Mongoose connection successful.`)
       );
       app.use(cors());
